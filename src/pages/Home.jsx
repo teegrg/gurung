@@ -38,7 +38,7 @@ function Home() {
         <div className="project__1">
           <img className="img" src={project1} alt="pic" />
           <div className="project__text">
-            <a href="https://keepssake.netlify.app/" target="_blank">
+            <a href="https://keepssake.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text keepsake__text">KEEPSAKE</div>
                 <ArrowOutwardIcon className="arrow keepsake__arrow" />
@@ -53,7 +53,7 @@ function Home() {
         <div className="project__2">
           <img className="img" src={project2} alt="pic" />
           <div className="project__text">
-            <a href="https://splitzer.netlify.app/" target="_blank">
+            <a href="https://splitzer.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text">SPLITZ</div>
                 <ArrowOutwardIcon className="arrow" />
@@ -67,7 +67,7 @@ function Home() {
         <div className="project__3">
           <img className="img" src={project3} alt="pic" />
           <div className="project__text">
-            <a href="https://namastecards.onrender.com/" target="_blank">
+            <a href="https://namastecards.onrender.com/" target="_blank" rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text card__text">NAMASTE CARDS</div>
                 <ArrowOutwardIcon className="arrow card__arrow" />
@@ -81,7 +81,7 @@ function Home() {
         <div className="project__4">
           <img className="img" src={project4} alt="pic" />
           <div className="project__text">
-            <a href="https://teegrg.github.io/portfolioProject/index.html" target="_blank">
+            <a href="https://teegrg.github.io/portfolioProject/index.html" target="_blank" rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text">THE CURATOR</div>
                 <ArrowOutwardIcon className="arrow" />

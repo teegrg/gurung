@@ -1,4 +1,4 @@
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 import "../style/footer.css";
 
@@ -20,8 +20,8 @@ function Footer() {
         <a href="mailto: teegurung@gmail.com"><div className="footer__contact">Contact</div></a>
       </div>
       <div className="footer__icon">
-        <a href="https://www.linkedin.com/in/tsheringgurungny/" target="_blank" ><LinkedInIcon/></a>
-        <a href="https://github.com/teegrg" target="_blank" ><GitHubIcon/></a>
+        <a href="https://www.linkedin.com/in/tsheringgurungny/" target="_blank" rel="noopener noreferrer"><LinkedInIcon/></a>
+        <a href="https://github.com/teegrg" target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
         <a href="mailto: teegurung@gmail.com"><MailOutlineIcon/></a>
       </div>
     </div>
