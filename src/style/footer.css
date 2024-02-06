@@ -1,0 +1,49 @@
+.footer__container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  padding: 0 50px 0 50px;
+  border-top: 2px solid black;
+}
+
+.footer__text,
+.footer__icon {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.footer__home:hover,
+.footer__about:hover,
+.footer__contact:hover {
+  cursor: pointer;
+  color: rgba(238, 142, 86, 0.736);
+}
+
+.footer__icon a:hover {
+  animation: bounce 1s ease; /* Adjust the duration and easing as needed */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Adjust the bounce height as needed */
+  }
+  60% {
+    transform: translateY(-5px); /* Adjust the bounce height as needed */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__text,
+  .footer__icon {
+    gap: 10px;
+  }
+}
