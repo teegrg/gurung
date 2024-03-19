@@ -38,7 +38,7 @@ function Navbar() {
         </ScrollLink>
         <div className="nav__contact">
           <a
-            href="https://docs.google.com/document/d/1sLeu8KKqFF4cGS-zL7xrqLFb4uryli55/edit?usp=sharing&ouid=110595949783449698615&rtpof=true&sd=true"
+            href="https://teegrg.github.io/cv"
             target="_blank"
             rel="noopener noreferrer"
           >
