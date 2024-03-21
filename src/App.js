@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Work from "./pages/Work";
+import FourOFour from "./pages/404";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/*" element={<FourOFour/>} />
         </Routes>
         <Footer />
       </div>
