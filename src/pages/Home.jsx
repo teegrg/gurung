@@ -38,58 +38,108 @@ function Home() {
         <div className="project__1">
           <img className="img" src={project1} alt="pic" />
           <div className="project__text">
-            <a href="https://keepssake.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://keepssake.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text keepsake__text">KEEPSAKE</div>
                 <ArrowOutwardIcon className="arrow keepsake__arrow" />
               </div>
             </a>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            ipsam nisi aperiam quod itaque consectetur culpa, rerum aliquam vel
-            excepturi molestiae quas suscipit dolore eum maiores unde
-            exercitationem totam cum.
+            <div className="project__icon__wrapper">
+              <div className="project__icon">HTML</div>
+              <div className="project__icon">CSS</div>
+              <div className="project__icon">JAVASCRIPT</div>
+              <div className="project__icon">REACT</div>
+              <div className="project__icon">TAILWIND</div>
+              <div className="project__icon">REDUX</div>
+              <div className="project__icon">STRIPE</div>
+              <div className="project__icon">GOOGLEAPI</div>
+              <div className="project__icon">FIREBASE</div>
+            </div>
+            Developed a dynamic web application named Keepsake, a peer-to-peer
+            platform that revolutionizes storage solutions. The application
+            connects individuals in need of storage space with those who have
+            extra space to spare.
           </div>
         </div>
         <div className="project__2">
           <img className="img" src={project2} alt="pic" />
           <div className="project__text">
-            <a href="https://splitzer.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://splitzer.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text">SPLITZ</div>
                 <ArrowOutwardIcon className="arrow" />
               </div>
             </a>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae
-            ex voluptatum culpa hic eaque in sed. Ad in quas placeat distinctio
-            cumque nobis molestias delectus. Itaque voluptas cumque tenetur?
+            <div className="project__icon__wrapper">
+              <div className="project__icon">HTML</div>
+              <div className="project__icon">CSS</div>
+              <div className="project__icon">JAVASCRIPT</div>
+              <div className="project__icon">REACT</div>
+              <div className="project__icon">NODE.JS</div>
+              <div className="project__icon">GITHUB</div>
+            </div>
+            Created an application designed to streamline the division of rent
+            and expenses among housemates. Drawing from my personal experience
+            with the monthly challenges of settling accounts, this app replaces
+            the outdated method of tracking debts on paper with a digital
+            solution that simplifies bill management and payment
+            responsibilities.
           </div>
         </div>
         <div className="project__3">
           <img className="img" src={project3} alt="pic" />
           <div className="project__text">
-            <a href="https://namastecards.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://namastecards.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text card__text">NAMASTE CARDS</div>
                 <ArrowOutwardIcon className="arrow card__arrow" />
               </div>
             </a>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae
-            ex voluptatum culpa hic eaque in sed. Ad in quas placeat distinctio
-            cumque nobis molestias delectus. Itaque voluptas cumque tenetur?
+            <div className="project__icon__wrapper">
+              <div className="project__icon">HTML</div>
+              <div className="project__icon">CSS</div>
+              <div className="project__icon">JAVASCRIPT</div>
+              <div className="project__icon">REACT</div>
+              <div className="project__icon">NODE.JS</div>
+              <div className="project__icon">GITHUB</div>
+            </div>
+            Built an application that empowers individuals and small businesses
+            to create their own business cards instantly. There’s no more
+            waiting for deliveries or being constrained by minimum order
+            quantities. This app helps craft professional business cards from
+            the comfort of your home, saving both time and money.
           </div>
         </div>
         <div className="project__4">
           <img className="img" src={project4} alt="pic" />
           <div className="project__text">
-            <a href="https://teegrg.github.io/portfolioProject/index.html" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://teegrg.github.io/portfolioProject/index.html"
+              target="_blank"
+              rel="noopener noreferrer">
               <div className="title">
                 <div className="title__text">THE CURATOR</div>
                 <ArrowOutwardIcon className="arrow" />
               </div>
             </a>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae
-            ex voluptatum culpa hic eaque in sed. Ad in quas placeat distinctio
-            cumque nobis molestias delectus. Itaque voluptas cumque tenetur?
+            <div className="project__icon__wrapper">
+              <div className="project__icon">HTML</div>
+              <div className="project__icon">CSS</div>
+              <div className="project__icon">JAVASCRIPT</div>
+              <div className="project__icon">GITHUB</div>
+            </div>
+            The very first application I created with the mission to promote the
+            art of talented artists and bring their work to a global audience.
+            It will take you on a journey to explor the world of art!
           </div>
         </div>
       </div>
