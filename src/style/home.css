@@ -112,6 +112,7 @@ a {
 
 .project__icon__wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
   margin-bottom: 10px;
@@ -127,6 +128,9 @@ a {
   padding: 3px;
 }
 
+.see-more {
+  color: rgba(78, 75, 75, 0.759);
+}
 
 @media (max-width: 600px) {
   .home__container {

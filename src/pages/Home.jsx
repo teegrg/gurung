@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom"
 import React, { useState, useEffect } from "react";
 import About from "../component/About";
 
@@ -18,11 +17,24 @@ function Home() {
       setRole((prevRole) =>
         prevRole === "Developer" ? "Engineer" : "Developer"
       );
-    }, 3000); // Change role every 2000 milliseconds (2 seconds)
+    }, 3000);
 
-    // Clear the interval on component unmount
     return () => clearInterval(intervalId);
-  }, []); // Run this effect once when the component mounts
+  }, []);
+
+  const [expandedProject, setExpandedProject] = useState(null);
+
+  const toggleExpandProject = (index) => {
+    setExpandedProject(expandedProject === index ? null : index);
+  };
+
+  const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+      return text.slice(0, maxLength) + "... ";
+    } else {
+      return text;
+    }
+  };
 
   return (
     <>
@@ -35,13 +47,15 @@ function Home() {
       </div>
       <About />
       <div className="project">
+        {/* Project 1 */}
         <div className="project__1">
           <img className="img" src={project1} alt="pic" />
           <div className="project__text">
             <a
               href="https://keepssake.netlify.app/"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <div className="title">
                 <div className="title__text keepsake__text">KEEPSAKE</div>
                 <ArrowOutwardIcon className="arrow keepsake__arrow" />
@@ -58,19 +72,44 @@ function Home() {
               <div className="project__icon">GOOGLEAPI</div>
               <div className="project__icon">FIREBASE</div>
             </div>
-            Developed a dynamic web application named Keepsake, a peer-to-peer
-            platform that revolutionizes storage solutions. The application
-            connects individuals in need of storage space with those who have
-            extra space to spare.
+            {expandedProject === 1 ? (
+              <p>
+                Developed a dynamic web application named Keepsake, a
+                peer-to-peer platform that revolutionizes storage solutions. The
+                application connects individuals in need of storage space with
+                those who have extra space to spare.{" "}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(1)}
+                >
+                  See less
+                </span>
+              </p>
+            ) : (
+              <p>
+                {truncateText(
+                  "Developed a dynamic web application named Keepsake, a peer-to-peer platform that revolutionizes storage solutions. The application connects individuals in need of storage space with those who have extra space to spare.",
+                  150
+                )}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(1)}
+                >
+                  See more
+                </span>
+              </p>
+            )}
           </div>
         </div>
+        {/* Project 2 */}
         <div className="project__2">
           <img className="img" src={project2} alt="pic" />
           <div className="project__text">
             <a
               href="https://splitzer.netlify.app/"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <div className="title">
                 <div className="title__text">SPLITZ</div>
                 <ArrowOutwardIcon className="arrow" />
@@ -84,21 +123,46 @@ function Home() {
               <div className="project__icon">NODE.JS</div>
               <div className="project__icon">GITHUB</div>
             </div>
-            Created an application designed to streamline the division of rent
-            and expenses among housemates. Drawing from my personal experience
-            with the monthly challenges of settling accounts, this app replaces
-            the outdated method of tracking debts on paper with a digital
-            solution that simplifies bill management and payment
-            responsibilities.
+            {expandedProject === 2 ? (
+              <p>
+                Created an application designed to streamline the division of
+                rent and expenses among housemates. Drawing from my personal
+                experience with the monthly challenges of settling accounts,
+                this app replaces the outdated method of tracking debts on paper
+                with a digital solution that simplifies bill management and
+                payment responsibilities.{" "}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(2)}
+                >
+                  See less
+                </span>
+              </p>
+            ) : (
+              <p>
+                {truncateText(
+                  "Created an application designed to streamline the division of rent and expenses among housemates. Drawing from my personal experience with the monthly challenges of settling accounts, this app replaces the outdated method of tracking debts on paper with a digital solution that simplifies bill management and payment responsibilities.",
+                  150
+                )}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(2)}
+                >
+                  See more
+                </span>
+              </p>
+            )}
           </div>
         </div>
+        {/* Project 3 */}
         <div className="project__3">
           <img className="img" src={project3} alt="pic" />
           <div className="project__text">
             <a
               href="https://namastecards.onrender.com/"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <div className="title">
                 <div className="title__text card__text">NAMASTE CARDS</div>
                 <ArrowOutwardIcon className="arrow card__arrow" />
@@ -112,20 +176,45 @@ function Home() {
               <div className="project__icon">NODE.JS</div>
               <div className="project__icon">GITHUB</div>
             </div>
-            Built an application that empowers individuals and small businesses
-            to create their own business cards instantly. There’s no more
-            waiting for deliveries or being constrained by minimum order
-            quantities. This app helps craft professional business cards from
-            the comfort of your home, saving both time and money.
+            {expandedProject === 3 ? (
+              <p>
+                Built an application that empowers individuals and small
+                businesses to create their own business cards instantly. There’s
+                no more waiting for deliveries or being constrained by minimum
+                order quantities. This app helps craft professional business
+                cards from the comfort of your home, saving both time and money.{" "}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(3)}
+                >
+                  See less
+                </span>
+              </p>
+            ) : (
+              <p>
+                {truncateText(
+                  "Built an application that empowers individuals and small businesses to create their own business cards instantly. There’s no more waiting for deliveries or being constrained by minimum order quantities. This app helps craft professional business cards from the comfort of your home, saving both time and money.",
+                  150
+                )}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(3)}
+                >
+                  See more
+                </span>
+              </p>
+            )}
           </div>
         </div>
+        {/* Project 4 */}
         <div className="project__4">
           <img className="img" src={project4} alt="pic" />
           <div className="project__text">
             <a
               href="https://teegrg.github.io/portfolioProject/index.html"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <div className="title">
                 <div className="title__text">THE CURATOR</div>
                 <ArrowOutwardIcon className="arrow" />
@@ -137,9 +226,33 @@ function Home() {
               <div className="project__icon">JAVASCRIPT</div>
               <div className="project__icon">GITHUB</div>
             </div>
-            The very first application I created with the mission to promote the
-            art of talented artists and bring their work to a global audience.
-            It will take you on a journey to explor the world of art!
+            {expandedProject === 4 ? (
+              <p>
+                The very first application I created with the mission to promote
+                the art of talented artists and bring their work to a global
+                audience. It will take you on a journey to explore the world of
+                art!{" "}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(4)}
+                >
+                  See less
+                </span>
+              </p>
+            ) : (
+              <p>
+                {truncateText(
+                  "The very first application I created with the mission to promote the art of talented artists and bring their work to a global audience. It will take you on a journey to explore the world of art!",
+                  150
+                )}
+                <span
+                  className="see-more"
+                  onClick={() => toggleExpandProject(4)}
+                >
+                  See more
+                </span>
+              </p>
+            )}
           </div>
         </div>
       </div>
