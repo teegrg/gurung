@@ -132,6 +132,10 @@ a {
   color: rgba(78, 75, 75, 0.759);
 }
 
+.see-more:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .home__container {
     margin-top: 100px;
