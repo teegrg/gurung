@@ -3,20 +3,20 @@
   padding-top: 100px;
   padding-left: 50px;
   /* border-bottom: 2px solid black; */
-  animation: fade-out linear;
+  /* animation: fade-out linear;
   animation-timeline: view();
-  animation-range: exit;
+  animation-range: exit; */
   font-family: "Roboto Slab", serif;
 }
 
-@keyframes fade-out {
-  /* 25% { opacity: 0.5;} */
+/* @keyframes fade-out {
+  25% { opacity: 0.5;}
   85%,
   100% {
     opacity: 0;
     scale: 1.5;
   }
-}
+} */
 
 .img {
   width: 600px;
@@ -47,9 +47,17 @@ a {
   font-size: 3em;
   padding-top: 50px;
   color: rgba(0, 0, 0, 0.75);
-  /* font-weight:  */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: moveup 1s linear forwards;
 }
 
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .project {
   display: flex;
   flex-direction: column;
