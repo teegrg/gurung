@@ -1,10 +1,9 @@
 # Tshering Gurung's Portfolio - Home Component
 
-This repository contains the `Home` component for Tshering Gurung's portfolio website. The component showcases Tshering's projects, dynamically changing roles, and provides links to project repositories and live demos.
+This repository contains the `Home` component for Tshering Gurung's portfolio website. The component showcases Tshering's projects and provides links to project repositories and live demos.
 
 ## Features
 
-- **Dynamic Role Display**: Alternates between "Developer" and "Engineer" every 3 seconds.
 - **Project Showcase**: Displays a list of projects with images, descriptions, and tech stacks.
 - **Expandable Project Descriptions**: Allows users to expand and collapse detailed project descriptions.
 - **External Links**: Includes links to GitHub repositories and live demos for each project.
