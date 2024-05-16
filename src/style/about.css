@@ -43,6 +43,7 @@
     display: flex;
     gap: 25px;
     justify-content: center;
+    padding: 50px 0 50px 0;
 }
 
 .about__icon {
@@ -50,7 +51,7 @@
     border-radius: 10px;
     color: rgba(0, 0, 0, 0.475);
     width: fit-content;
-    padding: 7px;
+    padding: 12px;
 }
 
 @media (max-width:600px) {
