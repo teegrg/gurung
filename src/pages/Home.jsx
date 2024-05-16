@@ -61,8 +61,8 @@ function Home() {
                 rel="noopener noreferrer"
               >
                 <div className="giticon">
-                <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
-                <div className="git__icon">Code</div>
+                <GitHubIcon className="github-icon" style={{ fontSize: 60, color: 'white' }} />
+                <div className="git__icon__text">Code</div>
                 </div>
 
               </a>
@@ -131,8 +131,8 @@ function Home() {
         rel="noopener noreferrer"
       >
         <div className="giticon">
-        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
-        <div className="git__icon">Code</div>
+        <GitHubIcon className="github-icon" style={{ fontSize: 60, color: 'white' }} />
+        <div className="git__icon__text">Code</div>
         </div>
 
       </a>
@@ -200,8 +200,8 @@ function Home() {
         rel="noopener noreferrer"
       >
         <div className="giticon">
-        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
-        <div className="git__icon">Code</div>
+        <GitHubIcon className="github-icon" style={{ fontSize: 60, color: 'white' }} />
+        <div className="git__icon__text">Code</div>
         </div>
 
       </a>
@@ -268,8 +268,8 @@ function Home() {
         rel="noopener noreferrer"
       >
         <div className="giticon">
-        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
-        <div className="git__icon">Code</div>
+        <GitHubIcon className="github-icon" style={{ fontSize: 60, color: 'white' }} />
+        <div className="git__icon__text">Code</div>
         </div>
 
       </a>
