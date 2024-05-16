@@ -8,6 +8,8 @@ import project3 from "./pic/namastecard.png";
 import project4 from "./pic/curator.png";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 function Home() {
   const [role, setRole] = useState("Developer");
@@ -49,13 +51,29 @@ function Home() {
       <div className="project">
         {/* Project 1 */}
         <div className="project__1">
-          <img className="img" src={project1} alt="pic" />
+        <div className="img-container">
+    <img className="img" src={project1} alt="pic" />
+    <div className="modal">
+      <a
+        className="github-link"
+        href="https://github.com/teegrg/keepsake-backend"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="giticon">
+        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
+        <div className="git__icon">Code</div>
+        </div>
+
+      </a>
+    </div>
+  </div>
           <div className="project__text">
             <a
               href="https://keepssake.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              >
               <div className="title">
                 <div className="title__text keepsake__text">KEEPSAKE</div>
                 <ArrowOutwardIcon className="arrow keepsake__arrow" />
@@ -103,7 +121,23 @@ function Home() {
         </div>
         {/* Project 2 */}
         <div className="project__2">
-          <img className="img" src={project2} alt="pic" />
+        <div className="img-container">
+    <img className="img" src={project2} alt="pic" />
+    <div className="modal">
+      <a
+        className="github-link"
+        href="https://github.com/teegrg/splitz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="giticon">
+        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
+        <div className="git__icon">Code</div>
+        </div>
+
+      </a>
+    </div>
+  </div>
           <div className="project__text">
             <a
               href="https://splitzer.netlify.app/"
@@ -156,7 +190,23 @@ function Home() {
         </div>
         {/* Project 3 */}
         <div className="project__3">
-          <img className="img" src={project3} alt="pic" />
+        <div className="img-container">
+    <img className="img" src={project3} alt="pic" />
+    <div className="modal">
+      <a
+        className="github-link"
+        href="https://github.com/teegrg/namastecards"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="giticon">
+        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
+        <div className="git__icon">Code</div>
+        </div>
+
+      </a>
+    </div>
+  </div>
           <div className="project__text">
             <a
               href="https://namastecards.onrender.com/"
@@ -208,10 +258,26 @@ function Home() {
         </div>
         {/* Project 4 */}
         <div className="project__4">
-          <img className="img" src={project4} alt="pic" />
+        <div className="img-container">
+    <img className="img" src={project4} alt="pic" />
+    <div className="modal">
+      <a
+        className="github-link"
+        href="https://github.com/teegrg/tsheringgurung"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="giticon">
+        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
+        <div className="git__icon">Code</div>
+        </div>
+
+      </a>
+    </div>
+  </div>
           <div className="project__text">
             <a
-              href="https://teegrg.github.io/portfolioProject/index.html"
+              href="https://github.com/teegrg/portfolioProject"
               target="_blank"
               rel="noopener noreferrer"
             >
