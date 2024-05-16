@@ -44,17 +44,28 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-  display: none; /* Initially hide the modal */
+  background-color: rgba(149, 148, 148, 0.7);
+  display: none; 
   justify-content: center;
   align-items: center;
-  transition: opacity 2s ease; /* Add transition effect */
-  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 2s ease; 
+  opacity: 0; 
 }
 
 .img-container:hover .modal {
-  display: flex; /* Display the modal when parent is hovered */
-  opacity: 1; /* Fade in the modal */
+  display: flex; 
+  opacity: 1; 
+}
+
+.modal__phone {
+  height: 80%;
+  top: 40px;
+}
+
+.modal__phone2 {
+  /* width: 100%; */
+  height: 85%;
+  top: 25px;
 }
 
 .git__icon{

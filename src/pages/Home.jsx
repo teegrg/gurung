@@ -51,23 +51,23 @@ function Home() {
       <div className="project">
         {/* Project 1 */}
         <div className="project__1">
-        <div className="img-container">
-    <img className="img" src={project1} alt="pic" />
-    <div className="modal">
-      <a
-        className="github-link"
-        href="https://github.com/teegrg/keepsake-backend"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="giticon">
-        <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
-        <div className="git__icon">Code</div>
-        </div>
+          <div className="img-container">
+            <img className="img" src={project1} alt="pic" />
+            <div className="modal">
+              <a
+                className="github-link"
+                href="https://github.com/teegrg/keepsake-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="giticon">
+                <GitHubIcon className="github-icon" style={{ fontSize: 60 }} />
+                <div className="git__icon">Code</div>
+                </div>
 
-      </a>
-    </div>
-  </div>
+              </a>
+            </div>
+          </div>
           <div className="project__text">
             <a
               href="https://keepssake.netlify.app/"
@@ -123,7 +123,7 @@ function Home() {
         <div className="project__2">
         <div className="img-container">
     <img className="img" src={project2} alt="pic" />
-    <div className="modal">
+    <div className="modal modal__phone">
       <a
         className="github-link"
         href="https://github.com/teegrg/splitz"
@@ -260,7 +260,7 @@ function Home() {
         <div className="project__4">
         <div className="img-container">
     <img className="img" src={project4} alt="pic" />
-    <div className="modal">
+    <div className="modal modal__phone2">
       <a
         className="github-link"
         href="https://github.com/teegrg/tsheringgurung"
